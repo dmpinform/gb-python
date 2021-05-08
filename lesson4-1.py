@@ -1,6 +1,14 @@
 from sys import argv
 
 
-t, mt, bonus = map(float, argv[1:])
-m = t * mt + bonus
-print(m)
+def salary(*args):
+    if len(*args) == 3:
+        t, mt, bonus = map(float, *args)
+        m = t * mt + bonus
+        return m
+    else:
+        return 0
+
+
+if __name__ == "__main__":
+    print(salary(argv[1:]))
