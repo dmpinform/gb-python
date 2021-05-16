@@ -41,11 +41,11 @@ class PoliceCar(Car):
     pass
 
 
-car = TownCar(100, "red", "volvo", False)
+car = TownCar(90, "red", "volvo", False)
 print(car)
 car.show_speed()
 
-car = SportCar(100, "green", "opel", False)
+car = SportCar(70, "green", "opel", False)
 print(car)
 car.show_speed()
 
@@ -53,7 +53,7 @@ car = WorkCar(100, "yellow", "mazda", False)
 print(car)
 car.show_speed()
 
-car = PoliceCar(100, "black", "lada", True)
+car = PoliceCar(40, "black", "lada", True)
 
 print(car)
 car.show_speed()
